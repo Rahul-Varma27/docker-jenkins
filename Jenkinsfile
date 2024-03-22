@@ -12,7 +12,7 @@ pipeline {
 	                 }}
 		stage('Deployment'){
 		    steps {
-			sh 'cp target/docker-jenkins /home/rahul/Documents/Extractfile/apache-tomcat-9.0.85/webapps'
+			sh 'cp target/docker-jenkins.war /home/rahul/Documents/Extractfile/apache-tomcat-9.0.85/webapps'
 			}}
 			stage('Docker build'){
 		    steps {
